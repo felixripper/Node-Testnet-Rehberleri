@@ -2,10 +2,11 @@
 
 **NIBIRU TESTNET KURULUM REHBERİ**
 
+Henüz Faz 1 aşamasında olduğundan ödüllü değildir.
+
 **Mininum Sistem gereksinimleri:**
 
 2CPU, 4GB RAM, 100GB SSD
-
 MacOS or Ubuntu 18+
 
 **Komutu çalıştırıp hızlı kurulumu başlatıyoruz.**
@@ -14,13 +15,13 @@ MacOS or Ubuntu 18+
 wget -q -O nibiru.sh https://api.nodes.guru/nibiru.sh && chmod +x nibiru.sh && sudo /bin/bash nibiru.sh
 ```
 
-**Node adımızı belirledikten sonra aşağıdaki komut ile devam ediyoruz:**
+**Node adımızı belirledikten sonra aşağıdaki komut ile devam ediyoruz**
 
 ```
 source $HOME/.bash_profile
 ```
 
-**Ardından cüzdan oluşturup cüzdan adımızı belirliyoruz. Çıktı olarak karşımıza çıkan gizli kelimeleri kaydetmeyi unutmayınız.**
+**Ardından cüzdan oluşturup cüzdan adımızı belirliyoruz. Çıktı olarak karşımıza çıkan gizli kelimeleri kaydetmeyi unutmuyoruz.**
 
 ```
 nibid keys add CÜZDANİSMİNİZ
@@ -34,9 +35,9 @@ Cüzdan bakiyemizi öğrenmek için aşağıdaki komutu kullanabilirsiniz.
 nibid q bank balances CÜZDANADRESİNİZ
 ```
 
-**Ayrıca explorer üzerinden de cüzdanınızı aratarak bakiyenizi öğrenebilirsiniz.**
+Ayrıca explorer üzerinden de cüzdanınızı aratarak bakiyenizi öğrenebilirsiniz.
 
-**Senkronize olmayı bekleyeceğiz. Senkronize kontrolü için aşağıdaki komutu kullanabilirsiniz.**
+**Daha sonra senkronize olmayı bekleyiyoruz. Senkronizasyon uzun sürmüyor. Senkronize kontrolü için aşağıdaki komutu kullanabilirsiniz.**
 
 ```
 curl -s localhost:26657/status | jq .result.sync_info.catching_up
