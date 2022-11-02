@@ -91,7 +91,7 @@ nibid keys show CÜZDANİSMİNİZ --bech val -a
 **Kendinize token delegate etmek için:**
 
 ```
-nibid tx staking delegate VALOPERADRESİNİZ 10000000unibi --from wallet --chain-id nibiru-testnet-1 --fees 5000unibi
+nibid tx staking delegate VALOPERADRESİNİZ 1000000unibi --from wallet --chain-id nibiru-testnet-1 --fees 5000unibi
 ```
 
 
