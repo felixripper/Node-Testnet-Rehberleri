@@ -1,1 +1,1 @@
-# Kodlama bilgisi hiç olmayan birisi olarak hocalarımdan öğrendiklerim kadarıyla kendi başıma bulduğum ve kurduğum testnetler hakkında rehberleri paylaşacağım.
+# Kodlama bilgisi hiç olmayan birisi olarak @mmc6185 ve @brsbrc hocalarımdan öğrendiğim bilgilerle, kendi başıma bulduğum ve kurduğum testnetler hakkında hazırladığım kurulum rehberlerini paylaşmaya çalışıyorum.
