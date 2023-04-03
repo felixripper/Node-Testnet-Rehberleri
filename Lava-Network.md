@@ -164,14 +164,48 @@ lavad tx staking create-validator \
 ```
 lavad tx staking delegate $Valoper 10000000ulava --from=CUZDANISMI --chain-id=lava-testnet-1 --gas=auto
 ```
-##  Bakiye kontrolü için
+## YARARLI DİĞER KOMUTLAR
+
+Log kontrolü 
 ```
-lavad q bank balances $(lavad keys show wallet -a)
+journalctl -fu lavad -o cat
 ```
-##  Reset atmak için
+Node başlatma
 ```
-lavad tendermint unsafe-reset-all --home $HOME/.lava --keep-addr-book
+sudo systemctl start lavad
+```
+Node durdurma
+```
+sudo systemctl stop lavad
+```
+Restart 
+```
+sudo systemctl restart lavad
+```
+Node info
+```
+lavad status 2>&1 | jq .SyncInfo
+```
+Validator Info
+```
+lavad status 2>&1 | jq .ValidatorInfo
+```
+Node ID görüntüleme
+```
+lavad tendermint show-node-id
+```
+Cüzdan listesi
+```
+lavad keys list
+```
+Cüzdan kurtarma
+```
+lavad keys add CÜZDANADI --recover
+```
+Cüzdanı Silme
+```
+lavad keys delete $CÜZDANADI
 ```
 
-* Sorularınız için Notitia Telegram kanalından bize ulaşabilirsiniz. 
+** Sorularınız için Notitia Telegram kanalından bize ulaşabilirsiniz. 
 # Rehberi Forklamayı unutmayalım...
