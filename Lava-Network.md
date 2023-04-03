@@ -135,10 +135,10 @@ https://discord.com/channels/963778337904427018/1059851367717556314
 
 ## Validator oluşturuyoruz 
 *(Senkronize olduktan sonra)
-CUZDANISMI ve MONIKER kısımlarını değiştiriyoruz.
+Sadece MONIKER kısmını değiştiriyoruz.
 ```
 lavad tx staking create-validator \
---from CUZDANISMI \
+--from wallet \
 --amount 1000000ulava \
 --pubkey "$(lavad tendermint show-validator)" \
 --chain-id lava-testnet-1 \
