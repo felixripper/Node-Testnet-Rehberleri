@@ -1,18 +1,25 @@
-Lava Network Testnet (lava-testnet-1)
+# Lava Network Testnet Rehberi
 
 ![image](https://mirror-media.imgix.net/publication-images/gq4KFLkILtGC7LZhNp9Gr.jpeg?height=800&width=1600&h=800&w=1600&auto=compress)
 
- <a href="https://lavanet.xyz/">🌎 Website </a>
- <a href="https://discord.gg/mCBzfEbYcF">💎 Discord </a>
- <a href="https://lava.explorers.guru/">🚀 Explorer </a>
+### Sistem gereksinimleri
 
+* 8GB RAM
+* 100GB SSD	DEPOLAMA 
+* 2-4 CPU
+* Ubuntu 20 ve üzeri
 
-# Sistem güncellemesi yapıyoruz 
+## <a href="https://lavanet.xyz/">🌎 Websitesi </a>
+## <a href="https://discord.gg/mCBzfEbYcF">💎 Discord </a>
+## <a href="https://lava.explorers.guru/">⚙ Explorer </a>
+## <a href="https://t.me/NotitiaGroup">✅ Notitia Telegram Grubu </a>
+
+## Sistem güncellemesi yapıyoruz 
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl tar unzip wget tmux clang lz4 pkg-config libssl-dev jq build-essential git make ncdu gcc jq chrony liblz4-tool -y
 ```
-##Güncel Go kurulumu yapıyoruz
+## Güncel Go kurulumu yapıyoruz
 ```
 ver="1.19.3" && \
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" && \
@@ -165,3 +172,6 @@ lavad q bank balances $(lavad keys show wallet -a)
 ```
 lavad tendermint unsafe-reset-all --home $HOME/.lava --keep-addr-book
 ```
+
+* Sorularınız için Notitia Telegram kanalından bize ulaşabilirsiniz. 
+# Rehberi Forklamayı unutmayalım...
