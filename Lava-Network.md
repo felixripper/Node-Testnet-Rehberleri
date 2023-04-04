@@ -52,7 +52,7 @@ make install
 lavad version
 #v0.8.1
 ```
-## MONIKER yazan kısma kendi node isminiz ile değiştiriyoruz
+## MONIKER yazan kısmı kendi belirleyeceğimiz node ismi ile değiştiriyoruz
 ```
 lavad init MONIKER --chain-id lava-testnet-1
 ```
